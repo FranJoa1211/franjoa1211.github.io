@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F4F9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2C3E50; /* Gris oscuro azulado */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #FF8C42; /* Naranja suave */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FF8C42; /* Naranja suave */
+}
+
+/* Main layout con Flexbox */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sidebar */
+aside {
+    flex-basis: 20%;
+    background-color: #56CFE1; /* Azul claro */
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    color: #FF6F61; /* Rojo coral suave */
+}
+
+/* Section - Contenido principal */
+section {
+    flex-basis: 75%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    color: #2C3E50; /* Gris oscuro azulado */
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50; /* Gris oscuro azulado */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+    border-top: 4px solid #FF8C42; /* Naranja suave */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Enlaces del footer */
+footer a {
+    color: #FF6F61; /* Rojo coral suave */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
